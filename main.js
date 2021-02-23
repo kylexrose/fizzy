@@ -3,17 +3,17 @@
  ******************************/
 
 function fizzy(num){
-  let result = "";
+  let result = ""; //Set up for the return value
   if(num % 3 === 0){
-      result = result + "Fizz";
+      result = result + "Fizz"; //Adds "Fizz" onto empty string
   }
   if(num % 5 === 0){
-      result = result + "Buzz";
+      result = result + "Buzz"; //Adds "Buzz" either onto empty string or string containing "Fizz"
   }
-  if(result === ""){
+  if(result === ""){ //Sets result to num in case the string is empty
     result = num;
   }
-  return result;
+  return result; 
 }
 
 
